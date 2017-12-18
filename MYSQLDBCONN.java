@@ -20,10 +20,8 @@ public class MYSQLDBCONN
         try
         {
         	Class.forName("com.mysql.jdbc.Driver").newInstance();
-            //conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Homework2?autoReconnect=true&useSSL=false " +
-                                                //"user=root&password=Notte15975827178");
-			String connectionURL = "jdbc:mysql://localhost:3306/mytable?zeroDateTimeBehavior=convertToNull";
-			conn = DriverManager.getConnection(connectionURL, "root", "dmsry7648");
+			String connectionURL = "";
+			conn = DriverManager.getConnection(connectionURL, "","");
         }
         catch (SQLException ex)
         {
