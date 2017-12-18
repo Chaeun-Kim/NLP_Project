@@ -20,8 +20,10 @@ public class MYSQLDBCONN
         try
         {
         	Class.forName("com.mysql.jdbc.Driver").newInstance();
-			String connectionURL = "";
-			conn = DriverManager.getConnection(connectionURL, "","");
+			
+		
+		String connectionURL = "";
+			conn = DriverManager.getConnection(connectionURL, "username","password");
         }
         catch (SQLException ex)
         {
